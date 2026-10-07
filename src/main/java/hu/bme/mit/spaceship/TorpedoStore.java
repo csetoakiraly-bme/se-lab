@@ -14,6 +14,7 @@ public class TorpedoStore {
 
   private int torpedoCount = 0;
 
+  // The generator is created once and should not be reassigned during the object's lifetime.
   private final Random generator = new Random();
 
   public TorpedoStore(int numberOfTorpedos){
